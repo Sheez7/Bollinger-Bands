@@ -47,17 +47,17 @@ if __name__ == '__main__':
             'lower_band': lower_band
         })
 
-        print(bollinger_df.tail())
-
-        # Plot Bollinger Bands
-        plt.figure(figsize=(12, 6))
-        plt.plot(close_prices_np, label='Close')
-        plt.plot(upper_band, label='upper_band', linestyle='--')
-        plt.plot(middle_band, label='middle_band', linestyle='--')
-        plt.plot(lower_band, label='lower_band', linestyle='--')
-        plt.title('Bollinger Bands for ETHUSDT')
-        plt.legend()
-        plt.show()
+        # print(bollinger_df.tail())
+        #
+        # # Plot Bollinger Bands
+        # plt.figure(figsize=(12, 6))
+        # plt.plot(close_prices_np, label='Close')
+        # plt.plot(upper_band, label='upper_band', linestyle='--')
+        # plt.plot(middle_band, label='middle_band', linestyle='--')
+        # plt.plot(lower_band, label='lower_band', linestyle='--')
+        # plt.title('Bollinger Bands for ETHUSDT')
+        # plt.legend()
+        # plt.show()
 
         # Get the latest price and Bollinger Bands values
         price = bollinger_df.iloc[-1]['Close']
